@@ -8,9 +8,14 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
+  <%= render 'partials/nav' %>
+<div class="container">
+
   <body>
     <%= link_to 'Home', root_path %>
     <%= link_to 'Posts', posts_path %>
     <%= yield %>
   </body>
+</div>
+
 </html>
