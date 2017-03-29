@@ -12,12 +12,12 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :content %>
-    <%= f.text_area :content %>
+    <%= f.label :comment, class: "label" %>
+    <%= f.text_area :content, class: "textarea" %>
   </div>
 
   <div class="field">
-    <%= f.label :post_id %>
+    <% f.label :post_id %>
     <%= f.hidden_field :post_id, value: @post.id %>
   </div>
 
