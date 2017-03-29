@@ -9,5 +9,6 @@ class Post < ApplicationRecord
       :title,
       [:title, :content]
     ]
+  end
 
 end
