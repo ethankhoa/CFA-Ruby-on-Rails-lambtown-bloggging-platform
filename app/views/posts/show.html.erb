@@ -22,11 +22,11 @@
 
 <%= render 'comments/form', comment: @comment  %>
 
-<%= @post.comments.inspect %>
 
-<% @comments.each do |comments| %>
+<% @comments.each do |comment| %>
+
 <p><%= comment.user.email %> <%= comment.created_at %></p>
-<p><%= comment.comment %></p>
+<p><%= comment.content %></p>
 <% end %>
 
 <%= link_to 'Edit', edit_post_path(@post) %> |
