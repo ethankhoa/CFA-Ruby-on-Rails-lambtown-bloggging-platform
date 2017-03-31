@@ -2,7 +2,7 @@
   <div class="container">
     <div class="nav-left">
       <a class="nav-item">
-        <img src="http://bulma.io/images/bulma-logo.png" alt="Bulma logo">
+        LAMBTOWN
       </a>
       <a class="nav-item is-tab is-hidden-mobile is-active">Home</a>
       <a class="nav-item is-tab is-hidden-mobile">Features</a>
@@ -25,7 +25,13 @@
         </figure>
         Profile
       </a>
-      <a class="nav-item is-tab">Log out</a>
+      <a class="nav-item is-tab">
+        <% if user_signed_in? %>
+        <%= link_to('Logout', destroy_user_session_path, :method => :delete, class: "nav-item is-tab") %>
+        <% else %>
+        <%= link_to('Login', new_user_session_path, class: "nav-item is-tab")  %>
+        <% end %>
+      </a>
     </div>
   </div>
 </nav>
