@@ -15,6 +15,10 @@ class User < ApplicationRecord
     user.add_role :admin
   end
 
+  def admin?
+    has_role?(:admin)
+  end
+
 
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable

@@ -1,0 +1,3 @@
+class PostPolicy
+  
+end
