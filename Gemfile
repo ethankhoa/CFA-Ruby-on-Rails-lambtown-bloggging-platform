@@ -36,7 +36,8 @@ gem 'devise'
 # gem 'capistrano-rails', group: :development
 gem "bulma-rails", "~> 0.4.0"
 gem 'friendly_id', '~> 5.1.0'
-
+gem "rolify"
+gem "pundit"
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
